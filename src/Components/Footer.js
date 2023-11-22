@@ -11,11 +11,11 @@ function Footer() {
     <>
       <div style={containerStyle} className="text-white d-flex align-items-center justify-content-center mt-5">
         <img
-          src={image} // Replace with the actual path to your image
+          src={image}
           alt="Your Image"
           width="50"
           height="50"
-          className="mr-2" // Added margin to separate the image from text
+          className="mr-2"
         />
         All copyrights are reserved by Sukkur IBA University
       </div>
