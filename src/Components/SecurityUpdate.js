@@ -15,7 +15,7 @@ function SecurityUpdate() {
             <div className='d-flex justify-content-center bttn2'>
             <Button variant="secondary">Get Started</Button>
             </div>
-            <br></br><br></br>
+            <br></br>
         </>
     );
 }
