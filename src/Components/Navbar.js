@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
+
 
 import logo from '../assets/images/logo.png';
 
@@ -13,12 +14,14 @@ const Navigation = () => {
       <Navbar expand="lg" className="bg-light text-black">
         <Container fluid>
           <Navbar.Brand className="text-white" href="#">
-            <img
-              src={logo}
-              alt="Your Logo"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
+            <Link to='/'>
+              <img
+                src={logo}
+                alt="Your Logo"
+                height="30"
+                className="d-inline-block align-top"
+              />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -31,7 +34,7 @@ const Navigation = () => {
             </Nav>
             <Nav className="ml-auto">
               <Nav.Link className="text-black" href="#action1">
-                About
+                <Link to='/about'>About</Link>
               </Nav.Link>
               <Nav.Link className="text-black" href="#action2">
                 Contact Us

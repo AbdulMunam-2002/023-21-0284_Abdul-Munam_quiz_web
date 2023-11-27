@@ -1,9 +1,9 @@
-import '../styles.css';
+
 import React, { useState } from 'react';
  
 import { FormControl } from 'react-bootstrap';
 
-import image from '../images/image 5.png'
+import image from '../assets/images/image 5.png'
 function About(){
   const [UserInfo, setUserInfo] = useState({
     Contact: '',

@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import image from '../assets/images/Group 10.png'
+import { Link } from 'react-router-dom';
 
 export default function Statistics() {
     return (
@@ -14,7 +15,7 @@ export default function Statistics() {
                     </div>
 
                     <div className="col col-lg-6 col-md-6 col-sm-12">
-                        <img src={image}></img>
+                        <Link to='/about'><img src={image} alt=' '></img></Link>
                     </div>
                 </div>
                 
